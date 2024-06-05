@@ -1,0 +1,103 @@
+<?php session_start();
+if(empty($_SESSION['id'])):
+header('Location:login.php');
+endif;
+?>
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Online_Quiz_System</title>
+<style>
+body
+{
+background-color:LightGray;
+background-image: url('2.gif');
+opacity: 1;
+background-attachment: fixed;  
+  background-size: cover;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+h1
+{color:red;}
+.options>p{margin:4px;
+font-size:100%;
+}
+footer
+{
+background-color:black;
+padding:5px ;
+text-align:center;
+color:white;
+}
+img
+{
+width:5%;
+border:2px solid gray;
+border-radius:50%;
+}
+
+ul
+{
+list-style-type:none;
+padding:0;
+margin:0;
+overflow:hidden;
+}
+li
+{
+float:left;
+}
+a
+{
+display:flex;
+text-decoration:none;
+background-color:#00008B;
+width:100px;
+color:white;
+padding:10px 10px;
+}
+a:hover
+{
+background-color:DodgerBlue;
+}
+.new
+{
+color:white;
+background-color:black;
+flex-wrap:wrap;
+padding-left: 650px;
+
+}
+.new:hover
+{
+color:#f2f2f2;
+background-color:black;
+}
+</style>
+</head>
+<body>
+<center><marquee><h1>***Online Quiz System***</h1></marquee></center><br>
+<div class="options">
+<ul>
+<li style="float:right"><button><a href = "logout.html" target="_blank"><i class="fa-solid fa-share-from-square"></i>   Logout</a></button></li>
+<li><button><a href = "home.php" target="_blank"><i class="fa-solid fa-right-to-bracket"></i>   Login</a></button></li>
+<li><button><a href = "about.html" target="_blank"><i class="fa-brands fa-readme"></i>   About us</a></button></li>
+<li><button><a href = "register.php" target="_blank"><i class="fa-solid fa-user"></i>  Register </a></button></li>
+<li><button><a href = "studentlogin.html" target="_blank"><i class="fa-solid fa-circle-user"></i> Sign-up</a></button></li>
+</ul>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+<p><img src="venkatesh.jpg"><br>Developer</p>
+<p>Follow us on
+<a class="new" href="https://instagram.com/venkatesh.6469?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><ion-icon name="logo-instagram">follow </ion-icon></a>
+<a class="new" href="https://youtube.com/@TheUrsVenkatesh" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+<a class="new" href="https://www.facebook.com/profile.php?id=100090325178025" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></p>
+<p>Developed by Venkatesh Alagappan</p>
+<p><i class="fa-regular fa-copyright"></i> Copyright | All rights reserved</p>
+</center>
+</footer>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
